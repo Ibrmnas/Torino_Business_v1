@@ -9,8 +9,10 @@ window.I18N_DICT = {
 
     "hero.kicker": "Fresh & Halal",
     "hero.h1": "Homemade Lebanese Chicken Marinades",
-    "hero.tag": "Pre-order during the week • Weekend delivery • Min 1 kg • Delivery €2",
-    "cta.whatsapp": "Create your order on WhatsApp",
+    "hero.chip.tawook": "Red Shish Tawook",
+    "hero.chip.shawarma": "Lebanese Shawarma",
+    "hero.chip.fajita": "Lebanese Fajita",
+    "hero.chip.escalope": "Escalope"
 
     "home.why.title": "Why choose us?",
     "home.why.1": "Family Lebanese recipes",
@@ -66,8 +68,10 @@ window.I18N_DICT = {
 
     "hero.kicker": "Fresco & Halal",
     "hero.h1": "Marinature Libanesi di Pollo Fatte in Casa",
-    "hero.tag": "Ordina in settimana • Consegna nel weekend • Min 1 kg • Consegna €2",
-    "cta.whatsapp": "Ordina su WhatsApp",
+    "hero.chip.tawook": "Shish Tawook Rosso",
+    "hero.chip.shawarma": "Shawarma Libanese",
+    "hero.chip.fajita": "Fajita Libanese",
+    "hero.chip.escalope": "Scaloppine"
 
     "home.why.title": "Perché sceglierci?",
     "home.why.1": "Ricette libanesi di famiglia",
