@@ -64,7 +64,7 @@ window.I18N_DICT = {
     "nav.faq": "FAQ",
     "nav.about": "Chi siamo",
 
-    "hero.kicker": "Fresh & Halal",
+    "hero.kicker": "Fresco & Halal",
     "hero.h1": "Marinature Libanesi di Pollo Fatte in Casa",
     "hero.tag": "Ordina in settimana • Consegna nel weekend • Min 1 kg • Consegna €2",
     "cta.whatsapp": "Ordina su WhatsApp",
