@@ -116,16 +116,53 @@
     @media (max-width:1000px){ .hero{grid-template-columns:1fr} .hero-visual{min-height:320px} }
     @media (max-width:900px){ .cards{grid-template-columns:1fr 1fr} .steps{grid-template-columns:1fr 1fr} .testimonials{grid-template-columns:1fr 1fr} }
 
-   @media (max-width:640px){
+@media (max-width:640px){
 
-  /* HEADER */
+  /* === RESTORED MOBILE HEADER (clean horizontal layout) === */
   header .nav {
-    padding: 6px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 0 !important;
+    gap: 10px !important;
   }
+
+  .brand {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
   .brand .logo { width: 32px; height: 32px; }
   .brand .name b { font-size: 14px; }
-  .navlinks a { font-size: 13px; padding: 5px 10px; }
-  .lang button { padding: 4px 8px; font-size: 12px; }
+  .brand .name span { font-size: 10px; }
+
+  .navlinks {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 10px !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+
+  .navlinks::-webkit-scrollbar { display: none; }
+
+  .navlinks a {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .lang {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 6px !important;
+  }
+
+  .lang button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
 
   /* HERO WRAPPER */
   .hero {
@@ -164,35 +201,38 @@
     margin-top: 6px;
     margin-bottom: 12px;
   }
+
   .chip {
     padding: 6px 10px;
     font-size: 12px;
   }
 
   /* PICKUP PILL */
-  .pillbar .pill {
-    font-size: 13px;
-    padding: 8px 12px;
-    line-height: 1.3;
-  }
   .pillbar {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
     justify-content: center;
   }
 
+  .pillbar .pill {
+    font-size: 13px;
+    padding: 8px 12px;
+    line-height: 1.3;
+  }
+
   /* CTA BUTTONS */
   .cta {
-    justify-content: center;
+    justify-content: flex-start !important;    /* LEFT aligned */
+    align-items: flex-start !important;        /* LEFT aligned */
     flex-direction: column;
     gap: 8px;
     margin-top: 10px;
   }
 
   .cta .btn {
-    width: 100%;
-    max-width: 260px;
-    text-align: center;
+    width: auto;               /* no full width */
+    max-width: none;
+    text-align: left;          /* left-align text */
     font-size: 15px;
     padding: 12px 14px;
   }
@@ -206,9 +246,11 @@
     grid-template-columns: 1fr !important;
     gap: 20px;
   }
+
   .card {
     padding: 14px !important;
   }
+
   .food-img {
     aspect-ratio: 4/3 !important;
   }
@@ -221,6 +263,7 @@
   }
 
 }
+
 
     /* Accessible skip link */
     .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
