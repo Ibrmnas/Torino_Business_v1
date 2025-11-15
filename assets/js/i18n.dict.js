@@ -12,7 +12,7 @@ window.I18N_DICT = {
     "hero.chip.tawook": "Red Shish Tawook",
     "hero.chip.shawarma": "Lebanese Shawarma",
     "hero.chip.fajita": "Lebanese Fajita",
-    "hero.chip.escalope": "Escalope"
+    "hero.chip.escalope": "Escalope",
 
     "home.why.title": "Why choose us?",
     "home.why.1": "Family Lebanese recipes",
