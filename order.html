@@ -330,22 +330,88 @@ table.table td:nth-child(3) {
     .tip h3{margin:0 0 8px;font-size:18px;display:flex;gap:8px;align-items:center}
     .slots-list{margin:8px 0 0 0;padding-left:18px}
 
-    @media (max-width:640px){
-      .table-wrap{overflow:visible;box-shadow:none;border-radius:0;border:0}
-      table.table{border-collapse:separate;border-spacing:0 10px}
-      table.table thead{display:none}
-      table.table tbody tr{
-        display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;
-        background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px;margin:0 0 6px 0
-      }
-      table.table tbody td{display:flex;flex-direction:column;gap:6px;padding:0;border:0}
-      table.table tbody td::before{content:attr(data-label);font-weight:900;font-size:.9rem;color:var(--ink);opacity:.85;margin-bottom:6px}
-      table.table tbody td:nth-child(6){grid-column:2;align-self:center;justify-self:end}
-      table.table select,table.table input{height:44px;border-radius:10px}
-      .qty-wrap{grid-template-columns:44px 1fr 44px}
-      .qty-btn{width:44px;height:44px;border-radius:10px}
-      tfoot tr td{padding:10px}
-    }
+/* Mobile layout for each order row – big, clear, stacked */
+@media (max-width:640px){
+
+  .table-wrap{
+    overflow: visible;
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+  }
+
+  table.table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;   /* space between cards */
+  }
+
+  /* Hide desktop header row */
+  table.table thead{
+    display: none;
+  }
+
+  /* Each order row becomes a vertical card */
+  table.table tbody tr{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 14px;
+    margin: 0 0 10px 0;
+  }
+
+  /* Each cell: label + field stacked */
+  table.table tbody td{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0;
+    border: 0;
+  }
+
+  /* Show the column name as a label above the input */
+  table.table tbody td::before{
+    content: attr(data-label);
+    font-weight: 700;
+    font-size: 13px;
+    color: #4b5563;
+  }
+
+  /* Action (red X) aligned to the right */
+  table.table tbody td:last-child{
+    align-self: flex-end;
+  }
+
+  /* Inputs bigger & easier to tap */
+  table.table select,
+  table.table input{
+    height: 44px;
+    border-radius: 12px;
+    font-size: 15px;
+  }
+
+  /* Quantity stepper nicely sized */
+  .qty-wrap{
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    gap: 8px;
+  }
+
+  .qty-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  tfoot tr td{
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+}
+
   </style>
 </head>
 
