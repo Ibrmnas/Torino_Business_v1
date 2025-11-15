@@ -87,7 +87,7 @@
 
     @media (max-width:1000px){ .hero{grid-template-columns:1fr} .hero-visual{min-height:320px} }
 
-    @media (max-width:640px){
+@media (max-width:640px){
 
   /* HEADER (same structure, just a bit tighter) */
   .nav{
@@ -112,10 +112,10 @@
     height: 34px;
   }
   .brand .name b{
-    font-size: 20px;
+    font-size: 15px;
   }
   .brand .name span{
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .navlinks{
@@ -150,7 +150,7 @@
   }
 
   .panel h1{
-    font-size: 36px;         /* smaller title */
+    font-size: 24px;         /* smaller title */
     line-height: 1.2;
     margin: 6px 0 8px;
     white-space: normal;
@@ -158,7 +158,7 @@
   }
 
   .kicker{
-    font-size: 15px;
+    font-size: 12px;
     letter-spacing: 0.12em;
     margin-bottom: 4px;
   }
@@ -209,6 +209,7 @@
     grid-template-columns: 1fr;
   }
 }
+
     
     .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip:focus{left:10px;top:10px;width:auto;height:auto;z-index:999;background:#fff;padding:10px 12px;border-radius:10px;border:1px solid var(--border)}
@@ -331,6 +332,7 @@ table.table td:nth-child(3) {
     .slots-list{margin:8px 0 0 0;padding-left:18px}
 
 /* Mobile layout for each order row – big, clear, stacked */
+/* Mobile layout for each order row – big, clear, stacked */
 @media (max-width:640px){
 
   .table-wrap{
@@ -412,87 +414,6 @@ table.table td:nth-child(3) {
   }
 }
 
-/* FINAL TWEAK: make each order row fit nicely and feel bigger on phones */
-@media (max-width:640px) {
-
-  /* Make the main order pane full-width but with nice side padding */
-  .order-pane {
-    max-width: 100%;
-    margin: 0;
-    padding: 18px 16px 22px;
-  }
-
-  /* Row card: full width, bigger padding, softer radius */
-  .table-wrap {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  table.table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 14px;
-  }
-
-  table.table tbody tr {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 16px 16px 18px;
-  }
-
-  table.table tbody td {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 0;
-    border: 0;
-  }
-
-  table.table tbody td::before {
-    content: attr(data-label);
-    font-size: 14px;
-    font-weight: 700;
-    color: #4b5563;
-  }
-
-  /* Inputs a bit taller & clearer */
-  table.table select,
-  table.table input {
-    height: 48px;
-    border-radius: 12px;
-    font-size: 15px;
-  }
-
-  /* Quantity controls – larger and easier to tap */
-  .qty-wrap {
-    display: grid;
-    grid-template-columns: 44px 1fr 44px;
-    gap: 8px;
-  }
-
-  .qty-btn {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    font-size: 18px;
-  }
-
-  /* Keep delete button nicely aligned at bottom right */
-  table.table tbody td:last-child {
-    align-self: flex-end;
-    margin-top: 4px;
-  }
-}
-
-
-
-
-
-    
   </style>
 </head>
 
