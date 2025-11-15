@@ -182,19 +182,16 @@
   }
 
   /* CTA BUTTONS */
+  /* Left-align the CTA buttons on mobile */
   .cta {
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 10px;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
   }
 
   .cta .btn {
-    width: 100%;
-    max-width: 260px;
-    text-align: center;
-    font-size: 15px;
-    padding: 12px 14px;
+    width: auto;                /* prevent full-width */
+    max-width: none;
+    text-align: left;
   }
 
   .btn.secondary {
