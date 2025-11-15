@@ -115,58 +115,113 @@
     /* ===== Mobile tweaks ===== */
     @media (max-width:1000px){ .hero{grid-template-columns:1fr} .hero-visual{min-height:320px} }
     @media (max-width:900px){ .cards{grid-template-columns:1fr 1fr} .steps{grid-template-columns:1fr 1fr} .testimonials{grid-template-columns:1fr 1fr} }
-@media (max-width:640px){
-  .nav{display:grid;grid-template-columns:1fr;grid-template-areas:"brand" "links" "lang";gap:8px;padding:8px 0;align-items:center}
-  .brand{grid-area:brand;gap:8px}
-  .brand .logo{width:34px;height:34px}
-  .brand .name b{font-size:15px}
-  .navlinks{grid-area:links;display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
-  .navlinks a{padding:6px 10px;font-size:14px;border-radius:999px}
-  .lang{grid-area:lang;display:flex;gap:8px;justify-content:flex-end}
-  
-  .panel{padding:16px; margin:0 auto; width:100%;}
 
-  /* ⭐ FIX HERO SPACING ON MOBILE */
-  .hero{
-    padding:20px 0 10px;
+    @media (max-width:640px){
+
+  /* HEADER */
+  header .nav {
+    padding: 6px 0 !important;
+  }
+  .brand .logo { width: 32px; height: 32px; }
+  .brand .name b { font-size: 14px; }
+  .navlinks a { font-size: 13px; padding: 5px 10px; }
+  .lang button { padding: 4px 8px; font-size: 12px; }
+
+  /* HERO WRAPPER */
+  .hero {
+    padding: 20px 0 10px !important;
   }
 
-  /* ⭐ FIX TITLE SIZE + REMOVE NO-WRAP */
-  .panel h1{
-    font-size:28px !important;
-    line-height:1.2 !important;
-    white-space:normal !important;
-    text-align:center;
+  /* PANEL */
+  .panel {
+    padding: 18px 14px !important;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
   }
 
-  /* ⭐ CENTER CHIPS + REDUCE SIZE */
-  .chips{
-    justify-content:center;
-    gap:6px;
-  }
-  .chip{
-    padding:6px 10px;
-    font-size:13px;
-  }
-
-  /* ⭐ FIX CTA BUTTONS SPACING */
-  .cta{
-    justify-content:center;
-    gap:10px;
-    margin-top:14px;
+  /* TITLE */
+  .panel h1 {
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+    white-space: normal !important;
+    font-weight: 800;
+    text-align: center;
   }
 
-  /* ⭐ FULL WIDTH CARDS */
-  .cards{grid-template-columns:1fr}
-  
-  /* ⭐ Image becomes 4/3 on mobile */
-  .food-img{
-    aspect-ratio:4/3;
+  /* KICKER */
+  .kicker {
+    font-size: 12px !important;
+    letter-spacing: 0.12em;
+    margin-bottom: 6px;
   }
 
-  .steps{grid-template-columns:1fr}
-  .testimonials{grid-template-columns:1fr}
+  /* CHIPS */
+  .chips {
+    justify-content: center;
+    gap: 6px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+  }
+  .chip {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  /* PICKUP PILL */
+  .pillbar .pill {
+    font-size: 13px;
+    padding: 8px 12px;
+    line-height: 1.3;
+  }
+  .pillbar {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    justify-content: center;
+  }
+
+  /* CTA BUTTONS */
+  .cta {
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .cta .btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .btn.secondary {
+    border-radius: 12px;
+  }
+
+  /* MENU CARDS */
+  .cards {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  .card {
+    padding: 14px !important;
+  }
+  .food-img {
+    aspect-ratio: 4/3 !important;
+  }
+
+  /* SECTION TITLES */
+  .section h2 {
+    font-size: 20px !important;
+    text-align: left;
+    padding-left: 4px;
+  }
+
 }
+
 
 
     /* Accessible skip link */
