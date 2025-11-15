@@ -86,10 +86,11 @@
     footer{border-top:1px solid var(--border);padding:22px 0 48px;color:var(--muted);margin-top:26px}
 
     @media (max-width:1000px){ .hero{grid-template-columns:1fr} .hero-visual{min-height:320px} }
-@media (max-width:640px){
 
-  /* HEADER layout like home */
-  .nav {
+    @media (max-width:640px){
+
+  /* HEADER (same structure, just a bit tighter) */
+  .nav{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -100,100 +101,114 @@
     padding: 8px 0;
     align-items: center;
   }
-  .brand {
+  .brand{
     grid-area: brand;
+    display: flex;
+    align-items: center;
     gap: 8px;
   }
-  .brand .logo {
+  .brand .logo{
     width: 34px;
     height: 34px;
   }
-  .brand .name b {
+  .brand .name b{
     font-size: 15px;
   }
-  .brand .name span {
+  .brand .name span{
     font-size: 11px;
   }
 
-  .navlinks {
+  .navlinks{
     grid-area: links;
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     justify-content: flex-start;
   }
-  .navlinks a {
+  .navlinks a{
     padding: 6px 10px;
     font-size: 14px;
     border-radius: 999px;
   }
 
-  .lang {
+  .lang{
     grid-area: lang;
     display: flex;
     gap: 8px;
     justify-content: flex-end;
   }
 
-  /* HERO PANEL – smaller and tighter on phone */
-  .hero {
-    padding: 20px 0 10px;
+  /* HERO – smaller and narrower on phone */
+  .hero{
+    padding: 20px 0 12px;
   }
 
-  .panel {
+  .panel{
     padding: 18px 16px;
-    margin: 0 auto 12px;
+    max-width: 360px;        /* <— make card narrower */
+    margin: 0 auto;          /* center it */
   }
 
-  .panel h1 {
-    font-size: 26px;
+  .panel h1{
+    font-size: 24px;         /* smaller title */
     line-height: 1.2;
-    margin-bottom: 10px;
+    margin: 6px 0 8px;
     white-space: normal;
-    text-align: left;   /* use 'center' if you prefer */
+    text-align: left;        /* use 'center' if you prefer */
   }
 
-  .kicker {
+  .kicker{
     font-size: 12px;
     letter-spacing: 0.12em;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
-  .tagline {
+  .tagline{
     font-size: 14px;
-    margin: 6px 0 12px;
+    margin: 6px 0 10px;
   }
 
   /* HERO CHIPS */
-  .chips {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 6px;
+  .chips{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px 8px;
     margin-top: 6px;
     margin-bottom: 10px;
+    justify-items: center;
   }
 
-  .chip {
+  .chip{
+    width: 100%;
+    text-align: center;
     padding: 6px 10px;
     font-size: 11px;
+    line-height: 1.2;
+    white-space: normal;
   }
 
-  /* ORDER SECTION – pull nearer the hero */
-  .section.order-main {
-    padding: 16px 0 24px;
+  /* ORDER SECTION – bring it closer and narrow card */
+  .section.order-main{
+    padding: 8px 0 24px;
   }
 
-  /* Make the main order card breathe a bit more but still fit nicely */
-  .order-pane {
-    padding: 18px 14px 20px;
+  .order-pane{
+    max-width: 360px;       /* same width as hero */
+    margin: 0 auto;         /* centered */
+    padding: 18px 16px 20px;
   }
 
-  .cards {
+  /* keep info panel full width if you like, or also narrow it:
+  .side-pane{
+    max-width: 360px;
+    margin: 16px auto 0;
+  }
+  */
+
+  .cards{
     grid-template-columns: 1fr;
   }
 }
-
     
     .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip:focus{left:10px;top:10px;width:auto;height:auto;z-index:999;background:#fff;padding:10px 12px;border-radius:10px;border:1px solid var(--border)}
