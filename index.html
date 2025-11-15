@@ -116,7 +116,7 @@
     @media (max-width:1000px){ .hero{grid-template-columns:1fr} .hero-visual{min-height:320px} }
     @media (max-width:900px){ .cards{grid-template-columns:1fr 1fr} .steps{grid-template-columns:1fr 1fr} .testimonials{grid-template-columns:1fr 1fr} }
 
-    @media (max-width:640px){
+   @media (max-width:640px){
 
   /* HEADER */
   header .nav {
@@ -182,16 +182,19 @@
   }
 
   /* CTA BUTTONS */
-  /* Left-align the CTA buttons on mobile */
   .cta {
-    justify-content: flex-start !important;
-    align-items: flex-start !important;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
   }
 
   .cta .btn {
-    width: auto;                /* prevent full-width */
-    max-width: none;
-    text-align: left;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    font-size: 15px;
+    padding: 12px 14px;
   }
 
   .btn.secondary {
@@ -218,8 +221,6 @@
   }
 
 }
-
-
 
     /* Accessible skip link */
     .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
