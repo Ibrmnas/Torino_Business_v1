@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
   "items": [
     {
       "key": "tawook",
-      "price": 18,
+      "price": 16,
       "img": "assets/img/tawook_wide.webp",
       "name_en": "Red Shish Tawook",
       "name_it": "Shish Tawook Rosso",
@@ -20,7 +20,7 @@ window.SITE_CONFIG = {
     },
     {
       "key": "shawarma",
-      "price": 15,
+      "price": 18,
       "img": "assets/img/placeholder.svg",
       "name_en": "Lebanese Shawarma",
       "name_it": "Shawarma Libanese",
@@ -29,7 +29,7 @@ window.SITE_CONFIG = {
     },
     {
       "key": "fajita",
-      "price": 16,
+      "price": 20,
       "img": "assets/img/fajita_wide.webp",
       "name_en": "Lebanese Fajita",
       "name_it": "Fajita Libanese",
@@ -37,11 +37,11 @@ window.SITE_CONFIG = {
       "desc_it": "Straccetti di pollo con peperoni, cipolla e spezie libanesi."
     },
     {
-      "key": "escalope",
-      "price": 16,
+      "key": "fransisco",
+      "price": 18,
       "img": "assets/img/placeholder.svg",
-      "name_en": "Escalope",
-      "name_it": "Escalope",
+      "name_en": "Fransisco",
+      "name_it": "Fransisco",
       "desc_en": "Thin marinated cutlets—cook fast, pan or air-fryer.",
       "desc_it": "Fettine sottili marinate — cottura veloce in padella o air-fryer."
     }
