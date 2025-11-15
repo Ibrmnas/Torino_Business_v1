@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
   "items": [
     {
       "key": "tawook",
-      "price": 15,
+      "price": 18,
       "img": "assets/img/tawook_wide.webp",
       "name_en": "Red Shish Tawook",
       "name_it": "Shish Tawook Rosso",
