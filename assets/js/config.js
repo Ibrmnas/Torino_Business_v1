@@ -42,8 +42,8 @@ window.SITE_CONFIG = {
       "img": "assets/img/placeholder.svg",
       "name_en": "Fransisco",
       "name_it": "Fransisco",
-      "desc_en": "Thin marinated cutlets—cook fast, pan or air-fryer.",
-      "desc_it": "Fettine sottili marinate — cottura veloce in padella o air-fryer."
+      "desc_en": "Herbed Marinated Chicken with special lebanese spices.",
+      "desc_it": "Pollo marinato alle erbe con speciali spezie libanesi."
     }
   ]
 };
