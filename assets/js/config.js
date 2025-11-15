@@ -15,8 +15,8 @@ window.SITE_CONFIG = {
       "img": "assets/img/tawook_wide.webp",
       "name_en": "Red Shish Tawook",
       "name_it": "Shish Tawook Rosso",
-      "desc_en": "Tender chicken in yogurt, tomato, lemon, garlic & paprika.",
-      "desc_it": "Pollo tenero in yogurt, pomodoro, limone, aglio e paprika."
+      "desc_en": "Marinated chicken with lemon & garlic taste.",
+      "desc_it": "Pollo marinato al gusto di limone e aglio."
     },
     {
       "key": "shawarma",
@@ -24,8 +24,8 @@ window.SITE_CONFIG = {
       "img": "assets/img/placeholder.svg",
       "name_en": "Lebanese Shawarma",
       "name_it": "Shawarma Libanese",
-      "desc_en": "Classic marinade with garlic, lemon & warm spices.",
-      "desc_it": "Marinatura classica con aglio, limone e spezie calde."
+      "desc_en": "Marinated Chicken with special lebanese spices.",
+      "desc_it": "Pollo marinato con spezie libanesi speciali."
     },
     {
       "key": "fajita",
@@ -33,8 +33,8 @@ window.SITE_CONFIG = {
       "img": "assets/img/fajita_wide.webp",
       "name_en": "Lebanese Fajita",
       "name_it": "Fajita Libanese",
-      "desc_en": "Chicken strips with peppers, onion & Lebanese spices.",
-      "desc_it": "Straccetti di pollo con peperoni, cipolla e spezie libanesi."
+      "desc_en": "Marinated Chicken with mixed bell-pepper, corn & Lebanese spices.",
+      "desc_it": "Pollo marinato con peperoni misti, mais e spezie libanesi."
     },
     {
       "key": "fransisco",
