@@ -99,18 +99,31 @@
       .chips{gap:6px}
       .chip{padding:6px 10px;font-size:.92rem}
       .cards{grid-template-columns:1fr}
-        /* Smaller, tidy hero title on phones */
-        .panel h1{
-    font-size: 32px !important;   /* was huge before */
-    line-height: 1.2 !important;
-    margin-bottom: 10px !important;
-    white-space: normal !important;  /* allow nice wrapping */
-    text-align: center;               /* or 'center' if you prefer */
     }
+    
+    /* Mobile layout fix for Order page main card */
+@media (max-width:640px) {
+
+  /* Narrower, centered main order card */
+  .section.order-main {
+    padding: 20px 0 24px;
+  }
+
+  .order-pane {
+    max-width: 420px;           /* feel free to tweak 380–440px */
+    margin: 0 auto;             /* center within the container */
+    padding: 18px 14px 20px;    /* a bit more inner padding */
+  }
+
+  /* Optional: also narrow the notice box inside */
+  .order-pane .notice,
+  .order-pane .table-wrap {
+    border-radius: 14px;
+  }
+}
 
     .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip:focus{left:10px;top:10px;width:auto;height:auto;z-index:999;background:#fff;padding:10px 12px;border-radius:10px;border:1px solid var(--border)}
-    .panel h1 {font-size: 55px;line-height: 1.05;}
 
     /* ====== ORDER–SPECIFIC STYLES (only additions) ====== */
 
